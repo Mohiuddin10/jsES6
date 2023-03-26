@@ -3,27 +3,27 @@ const data = [
     name : 'coxs bazar',
     district : 'Chattogram',
     isHill : false,
-    img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fcoxs-bazar&psig=AOvVaw0pXrcfEkKf6OUghRJoU9FX&ust=1679944734976000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCPjgpvun-v0CFQAAAAAdAAAAABAE'},
+    img: 'https://images.unsplash.com/photo-1590603740183-980e7f6920eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y294cyUyMGJhemFyfGVufDB8fDB8fA%3D%3D&w=1000&q=80'},
 
     {
         _id : 002,
     name : 'Bandarban',
     district : 'Chattogram',
     isHill : true,
-    img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dbandarban&psig=AOvVaw3nmS6OQxEvqOFyUYErAr4l&ust=1679944821756000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIjMyaSo-v0CFQAAAAAdAAAAABAE'},
+    img: 'https://dailyasianage.com/library/2019/12/09/1575920575_6.jpg'},
 
 
     {_id : 003,
     name : 'Jaflong',
     district : 'Sylet',
     isHill : true,
-    img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fjaflong%252C-sylhet%252C-bangladesh&psig=AOvVaw13Rfd4mJW4fWEV-JxvjTb-&ust=1679944896135000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJjM98eo-v0CFQAAAAAdAAAAABAE'},
+    img: 'https://images.unsplash.com/photo-1643001607577-0a0332e79aab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFmbG9uZyUyQyUyMHN5bGhldCUyQyUyMGJhbmdsYWRlc2h8ZW58MHx8MHx8&w=1000&q=80'},
     
     {_id : 004,
     name : 'Kuakata',
     district : 'Borishal',
     isHill : false,
-    img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fkuakata%252C-bangladesh&psig=AOvVaw3ldPRhCf3DSwHUbS9cU4ch&ust=1679944958243000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCwyOWo-v0CFQAAAAAdAAAAABAE'}
+    img: 'https://images.unsplash.com/photo-1585296910838-ff8e46ea7979?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8a3Vha2F0YSUyQyUyMGJhbmdsYWRlc2h8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60'}
 
 ];
 
@@ -39,11 +39,13 @@ data.forEach(touristSpot => {
     // set inner html 
     singleCard.innerHTML = `
     <div class="card">
-    <img src=${img} class="card-img-top" alt="...">
+    <img src= "${img}" class="card-img-top rounded img-container" alt="No image">
     <div class="card-body">
         <h5 class="card-title">${name}</h5>
         <h6>${district}</h6>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p>It is a ${isHill === true ? "Hill side area" : "Sea side area"}</p>
+        <p class="card-text">This is a longer card with supporting </p>
+    </div>
     </div>
     `;
     // append the div inside the card container 
