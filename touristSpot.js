@@ -38,7 +38,7 @@ data.forEach(touristSpot => {
     singleCard.classList.add('col');
     // set inner html 
     singleCard.innerHTML = `
-    <div class="card">
+    <div class="card rounded shadow">
     <img src= "${img}" class="card-img-top rounded img-container img-thumbnail" style="height: 16rem;" alt="No image">
     <div class="card-body">
         <h5 class="card-title">${name}</h5>
